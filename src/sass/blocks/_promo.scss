@@ -2,6 +2,7 @@
     height: 100vh;
     padding-top: 206px;
     background: url("../img/main_bg.jpg") center/cover no-repeat;
+    position: relative;
     &__subtitle {
         padding-left: 12px;
         position: relative;
@@ -11,6 +12,7 @@
     &__title {
         margin-top: 9px;
         max-width: 532px;
+        line-height: 60px;
     }
     &__links {
         display: flex;

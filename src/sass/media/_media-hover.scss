@@ -1,10 +1,28 @@
 @media (min-width: 991px) {
+    .link {
+        transition: all .4s;
+        &:hover {
+            transform: scale(1.2);
+        }
+        &_btn {
+            &:hover {
+                box-shadow: 0 5px 10px rgba(68, 68, 68, 0.404);
+                transform: scale(1);
+
+            }
+        }
+    }
     .social-links {
         &__link {
             transition: all .5s;
             &:hover {
                 transform: rotate(90deg);
             }
+        }
+    }
+    .burger {
+        &:hover &__item, &:hover &__item::before, &:hover &__item::after {
+            background-color: $main-color;
         }
     }
 }
