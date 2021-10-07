@@ -1,0 +1,10 @@
+@media (min-width: 991px) {
+    .social-links {
+        &__link {
+            transition: all .5s;
+            &:hover {
+                transform: rotate(90deg);
+            }
+        }
+    }
+}
