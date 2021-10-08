@@ -4,9 +4,6 @@
     background: url("../img/main_bg.jpg") center/cover no-repeat;
     position: relative;
     &__subtitle {
-        padding-left: 12px;
-        position: relative;
-        z-index: 1;
         @include before-circle;
     }
     &__title {

@@ -1,0 +1,54 @@
+.about {
+    padding-top: 120px;
+    &__wrap {
+        display: grid;
+        grid-template-columns: 400px 1fr;
+        column-gap: 70px;
+    }
+    &__img {
+        display: block;
+        max-width: 100%;
+        object-fit: cover;
+    }
+    &__subtitle {
+        margin-bottom: 15px;
+        @include before-circle;
+    }
+    &__title {
+        margin-bottom: 25px;
+        @include divider;
+    }
+    &__info {
+        display: grid;
+        grid-template-columns: 260px 260px;
+        grid-auto-rows: min-content;
+        column-gap: 50px;
+        row-gap: 40px;
+    }
+    &__info-item {
+        &:nth-of-type(1) {
+            grid-column: 1/-1;
+        }
+        &:nth-of-type(2) {
+            @include before-circle-item;
+            &::after {
+                background: url(../icons/about_me/web_development.svg) no-repeat;
+            }
+        }
+        &:nth-of-type(3) {
+            @include before-circle-item;
+            &::after {
+                background: url(../icons/about_me/mobile_dev.svg) no-repeat;
+            }
+        }
+        &:nth-of-type(4) {
+            @include before-circle-item;
+            &::after {
+                background: url(../icons/about_me/design.svg) no-repeat;
+            }
+        }
+    }
+    &__skill-text {
+        font-size: 12px;
+    }
+}
