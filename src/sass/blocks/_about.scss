@@ -32,19 +32,19 @@
         &:nth-of-type(2) {
             @include before-circle-item;
             &::after {
-                background: url(../icons/about_me/web_development.svg) no-repeat;
+                background: url("../icons/about_me/web_development.svg") no-repeat;
             }
         }
         &:nth-of-type(3) {
             @include before-circle-item;
             &::after {
-                background: url(../icons/about_me/mobile_dev.svg) no-repeat;
+                background: url("../icons/about_me/mobile_dev.svg") no-repeat;
             }
         }
         &:nth-of-type(4) {
             @include before-circle-item;
             &::after {
-                background: url(../icons/about_me/design.svg) no-repeat;
+                background: url("../icons/about_me/design.svg") no-repeat;
             }
         }
     }

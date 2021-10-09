@@ -15,6 +15,23 @@
     }
 }
 
+@mixin before-circle-center {
+    position: relative;
+    z-index: 1;
+    &::before {
+        content: "";
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background-color: $main-color;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -7px;
+        z-index: -1;
+    }
+}
+
 @mixin before-circle-item {
     padding-left: 60px;
     position: relative;
@@ -51,5 +68,19 @@
         position: absolute;
         left: 0;
         bottom: -5px;
+    }
+}
+
+@mixin divider-center {
+    position: relative;
+    &::after {
+        content: "";
+        width: 60px;
+        height: 3px;
+        background-color: $main-color;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -25px;
     }
 }

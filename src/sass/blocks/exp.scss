@@ -1,0 +1,109 @@
+.exp {
+    padding-top: 126px;
+    &__subtitle {
+        text-align: center;
+        @include before-circle-center;
+    }
+    &__title {
+        text-align: center;
+        margin-bottom: 85px;
+        @include divider-center;
+    }
+    &__wrap {
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 136px;
+        padding-left: 65px;
+    }
+    &__item {
+        padding-left: 35px;
+        position: relative;
+        margin-bottom: 40px;
+        &::before {
+            content: "";
+            width: 1px;
+            height: calc(100% - 23px);
+            background-color: #000;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+        &::after {
+            content: "";
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: $main-color;
+            position: absolute;
+            left: -7px;
+            top: 8px;
+        }
+        &:nth-of-type(1) {
+            .exp__list-item {
+                &:nth-of-type(1) {
+                    .exp__list-header {
+                        &::after {
+                            background: url("../icons/experience/university.svg") no-repeat;
+                        }
+                    }
+                }
+                &:nth-of-type(2) {
+                    .exp__list-header {
+                        &::after {
+                            background: url("../icons/experience/courses.svg") no-repeat;
+                        }
+                    }
+                }
+            }
+        }
+        &:nth-of-type(2) {
+            .exp__list-item {
+                &:nth-of-type(1) {
+                    .exp__list-header {
+                        &::after {
+                            background: url("../icons/experience/developer.svg") no-repeat;
+                        }
+                    }
+                }
+                &:nth-of-type(2) {
+                    .exp__list-header {
+                        &::after {
+                            background: url("../icons/experience/designer.svg") no-repeat;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__list {
+        list-style: none;
+        margin-bottom: 0;
+    }
+    &__list-item {
+        margin-top: 45px;
+        position: relative;
+        &::before {
+            content: "";
+            width: 42px;
+            height: 1px;
+            background-color: #000;
+            position: absolute;
+            left: -34px;
+            top: 18px;
+
+        }
+    }
+    &__list-header {
+        margin-bottom: 12px;
+        @include before-circle-item;
+    }
+    &__list-title {
+        margin-bottom: 0;
+    }
+    &__list-descr {
+        font-size: 12px;
+    }
+    &__list-text {
+        font-size: 12px;
+    }
+}
