@@ -10,11 +10,11 @@
         max-width: 100%;
         object-fit: cover;
     }
-    &__subtitle {
+    &__title {
         margin-bottom: 15px;
         @include before-circle;
     }
-    &__title {
+    &__subtitle {
         margin-bottom: 25px;
         @include divider;
     }
@@ -47,6 +47,9 @@
                 background: url("../icons/about_me/design.svg") no-repeat;
             }
         }
+    }
+    &__skill-title {
+        margin-bottom: 6px;
     }
     &__skill-text {
         font-size: 12px;

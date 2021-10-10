@@ -1,10 +1,10 @@
 .exp {
     padding-top: 126px;
-    &__subtitle {
+    &__title {
         text-align: center;
         @include before-circle-center;
     }
-    &__title {
+    &__subtitle {
         text-align: center;
         margin-bottom: 85px;
         @include divider-center;
