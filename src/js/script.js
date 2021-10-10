@@ -13,3 +13,10 @@ menuClose.addEventListener('click', () => {
     menu.classList.remove('active');
     overlay.classList.remove('active');
 })
+
+const percent = document.querySelectorAll(".skills__level-percent"),
+    skillBar = document.querySelectorAll(".skills__level-bar-content");
+
+percent.forEach((item, index) => {
+    skillBar[index].style.width = item.innerHTML;
+});

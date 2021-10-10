@@ -57,11 +57,12 @@
     &__level-bar-bg {
         width: 100%;
         height: 14px;
+        border-radius: 4px;
         background-color: $empty-bar-color;
     }
     &__level-bar-content {
-        width: 50%;
         height: 100%;
+        border-radius: 4px;
         background-color: $main-color;
     }
 }
