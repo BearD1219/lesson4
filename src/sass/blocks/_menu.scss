@@ -13,7 +13,7 @@
         transition-timing-function: initial;
     }
     &__content {
-        width: 345px;
+        flex-basis: 345px;
         height: 100%;
         padding-top: 140px;
         padding-left: 40px;
@@ -74,7 +74,7 @@
         transform: translateX(-50%);
     }
     &__overlay {
-        width: 100%;
+        flex: auto;
         height: 100vh;
         background-color: #fff;
         transition: all .5s .3s;
