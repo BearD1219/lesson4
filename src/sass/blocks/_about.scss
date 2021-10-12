@@ -11,6 +11,7 @@
         object-fit: cover;
     }
     &__title {
+        margin-top: 8px;
         margin-bottom: 15px;
         @include before-circle;
     }

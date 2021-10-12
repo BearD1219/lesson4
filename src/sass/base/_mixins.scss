@@ -16,6 +16,7 @@
 }
 
 @mixin before-circle-center {
+    text-align: center;
     position: relative;
     z-index: 1;
     &::before {
@@ -58,6 +59,23 @@
     }
 }
 
+@mixin before-circle-small {
+    padding-left: 25px;
+    position: relative;
+    z-index: 1;
+    &::before {
+        content: "";
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: $main-color;
+        position: absolute;
+        left: 0;
+        top: 3px;
+        z-index: -1;
+    }
+}
+
 @mixin divider {
     position: relative;
     &::after {
@@ -72,6 +90,7 @@
 }
 
 @mixin divider-center {
+    text-align: center;     
     position: relative;
     &::after {
         content: "";

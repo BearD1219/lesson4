@@ -1,11 +1,9 @@
 .skills {
     padding-top: 86px;
     &__title {
-        text-align: center;
         @include before-circle-center;
     }
     &__subtitle {
-        text-align: center;
         margin-bottom: 93px;
         @include divider-center;
     }

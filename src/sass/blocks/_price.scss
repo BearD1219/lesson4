@@ -1,0 +1,32 @@
+.price {
+    padding-top: 66px;
+    &__title {
+        margin-bottom: 91px;
+        @include before-circle-center;
+        @include divider-center;
+    }
+    &__wrap {
+        display: grid;
+        padding: 0 50px 0 50px;
+        grid-template-columns: repeat(2, 370px);
+        justify-content: space-between;
+    }
+    &__item {
+        display: grid;
+        margin-bottom: 15px;
+        grid-template-columns: repeat(2, minmax(100px, auto));
+        grid-template-rows: 21px 18px;
+        justify-content: space-between;
+        row-gap: 5px;
+        @include before-circle-small;
+    }
+    &__item-price {
+        text-align: right;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    &__item-descr {
+        font-size: 12px;
+        grid-column: 1/3;
+    }
+}
