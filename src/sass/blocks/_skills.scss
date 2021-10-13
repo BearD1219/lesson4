@@ -12,7 +12,7 @@
         padding: 0 10px 0 10px;
         margin-bottom: 120px;
         grid-template-columns: repeat(auto-fill, 270px);
-        grid-auto-rows: min-max(270px, auto);
+        grid-auto-rows: minmax(270px, auto);
         gap: 13px;
     }
     &__item-img {
