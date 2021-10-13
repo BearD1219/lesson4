@@ -10,15 +10,18 @@
         padding: 0 50px 0 50px;
         grid-template-columns: repeat(2, 370px);
         justify-content: space-between;
+        background-color: rgba(0, 0, 255, 0.63);
     }
     &__item {
         display: grid;
         margin-bottom: 15px;
         grid-template-columns: repeat(2, minmax(100px, auto));
-        grid-template-rows: 21px 18px;
+        // grid-template-rows: 21px 18px;
+        grid-template-rows: auto auto;
         justify-content: space-between;
         row-gap: 5px;
         @include before-circle-small;
+        background-color: rgba(0, 128, 0, 0.644);
     }
     &__item-price {
         text-align: right;
